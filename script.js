@@ -40,13 +40,13 @@ const renderPokemon = async (pokemon) => {
 }
  
 
-form.addEventListener('submit', (event) => {
+form.addEventListener('submit', (event) => { //Formulário
 
     event.preventDefault();
     renderPokemon(input.value.toLowerCase());
 });
 
-buttonPrev.addEventListener('click', () => {
+buttonPrev.addEventListener('click', () => { //Botão retroceder
    if (searchPokemon > 1){
     searchPokemon -= 1;
     renderPokemon(searchPokemon);
@@ -54,7 +54,7 @@ buttonPrev.addEventListener('click', () => {
   
 });
 
-buttonNext.addEventListener('click', () => {
+buttonNext.addEventListener('click', () => { //Botão avançar
     searchPokemon += 1;
     renderPokemon(searchPokemon);
 });
