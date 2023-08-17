@@ -8,7 +8,7 @@ const buttonNext = document.querySelector('.btn-next');
 
 let searchPokemon = 1;
 
-const fetchPokemon = async (pokemon) => {
+const fetchPokemon = async (pokemon) => { // Inserindo API
 
     const APIResponse = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
 
@@ -18,7 +18,7 @@ const fetchPokemon = async (pokemon) => {
     }   
 }
 
-const renderPokemon = async (pokemon) => {
+const renderPokemon = async (pokemon) => { // Imagens da API
 
     pokemonName.innerHTML = 'Loading ...';
     pokemonNumber.innerHTML = '';
